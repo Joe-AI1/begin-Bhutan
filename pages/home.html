@@ -14,10 +14,12 @@
             background-color: #1e1e1e;
             color: #fff;
         }
+
         header {
             text-align: center;
             padding: 20px;
         }
+
         header h1 {
             font-size: 3rem;
             margin-bottom: 10px;
@@ -32,6 +34,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            transition: transform 0.3s;
+        }
+
+        .section:hover {
+            transform: scale(1.05);
         }
 
         .section h2 {
@@ -43,8 +50,9 @@
             font-weight: 700;
         }
 
-        .section:nth-child(odd) {
-            background-color: #151515;
+        a {
+            text-decoration: none;
+            color: inherit;
         }
 
         footer {
@@ -65,7 +73,6 @@
             height: 30px;
             margin: 0 5px;
         }
-
     </style>
 </head>
 <body>
@@ -74,38 +81,54 @@
         <h1>BHUTAN</h1>
     </header>
 
-    <!-- Sections with background images and titles -->
-    <div class="section" style="background-image: url('image-free/Bhutan temple.jpg');">
-        <h2>Government</h2>
-    </div>
+    <!-- Clickable Sections -->
+    <a href="government.html">
+        <div class="section" style="background-image: url('image-free/Bhutan\ temple.jpg');">
+            <h2>Government</h2>
+        </div>
+    </a>
 
-    <div class="section" style="background-image: url('image2-url.jpg');">
-        <h2>Administrative Division</h2>
-    </div>
+    <a href="administrative.html">
+        <div class="section" style="background-image: url('image2-url.jpg');">
+            <h2>Administrative Division</h2>
+        </div>
+    </a>
 
-    <div class="section" style="background-image: url('image3-url.jpg');">
-        <h2>The National Symbols</h2>
-    </div>
+    <a href="symbols.html">
+        <div class="section" style="background-image: url('image3-url.jpg');">
+            <h2>The National Symbols</h2>
+        </div>
+    </a>
 
-    <div class="section" style="background-image: url('image4-url.jpg');">
-        <h2>Geography</h2>
-    </div>
+    <a href="geography.html">
+        <div class="section" style="background-image: url('image4-url.jpg');">
+            <h2>Geography</h2>
+        </div>
+    </a>
 
-    <div class="section" style="background-image: url('image5-url.jpg');">
-        <h2>Economy</h2>
-    </div>
+    <a href="economy.html">
+        <div class="section" style="background-image: url('image5-url.jpg');">
+            <h2>Economy</h2>
+        </div>
+    </a>
 
-    <div class="section" style="background-image: url('image6-url.jpg');">
-        <h2>Travel</h2>
-    </div>
+    <a href="travel.html">
+        <div class="section" style="background-image: url('image6-url.jpg');">
+            <h2>Travel</h2>
+        </div>
+    </a>
 
-    <div class="section" style="background-image: url('image7-url.jpg');">
-        <h2>Population</h2>
-    </div>
+    <a href="population.html">
+        <div class="section" style="background-image: url('image7-url.jpg');">
+            <h2>Population</h2>
+        </div>
+    </a>
 
-    <div class="section" style="background-image: url('image8-url.jpg');">
-        <h2>Culture and Traditions</h2>
-    </div>
+    <a href="culture.html">
+        <div class="section" style="background-image: url('image8-url.jpg');">
+            <h2>Culture and Traditions</h2>
+        </div>
+    </a>
 
     <footer>
         <p>© 2024 Bhutan Travel. All rights reserved.</p>
