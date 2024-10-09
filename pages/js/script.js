@@ -39,3 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     }
 });
+// Existing script code...
+
+// Add the toggleMenu function here
+function toggleMenu() {
+    const menu = document.querySelector('nav ul');
+    menu.classList.toggle('active');
+}

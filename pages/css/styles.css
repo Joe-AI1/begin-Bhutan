@@ -603,22 +603,29 @@ footer p {
     margin: 40px auto;
 }
 
+/* Update Flex Layout for Centering Images and Text */
 .image-text-container {
     display: flex;
+    justify-content: center;  /* Center both image and text */
     align-items: center;
     margin-bottom: 40px;
+    flex-direction: column;  /* Stack image and text on smaller screens */
 }
 
 .culture-image {
-    max-width: 45%;
-    margin-right: 20px;
+    max-width: 100%;
+    margin-bottom: 20px;
     border-radius: 8px;
 }
 
+/* Center and adjust text alignment */
 .image-text-container p {
-    flex: 1;
-    text-align: justify;
+    text-align: center;  /* Center the text */
+    max-width: 800px;  /* Set max-width for readability */
+    margin: 0 auto;  /* Center the text block */
+    padding: 0 20px;
 }
+
 
 /* Responsive layout for smaller screens */
 @media (max-width: 768px) {
@@ -629,5 +636,42 @@ footer p {
     .culture-image {
         max-width: 100%;
         margin: 0 0 20px 0;
+    }
+}
+
+/* Responsive navigation bar for mobile: sliding effect */
+nav ul {
+    display: none;  /* Hide the menu by default on small screens */
+    flex-direction: column;
+    background-color: #151515;
+    position: absolute;
+    top: 60px;  /* Adjust based on your header height */
+    width: 100%;
+    left: 0;
+}
+
+nav ul.active {
+    display: flex;  /* Show menu when active */
+}
+
+nav .menu-icon {
+    display: block;
+    cursor: pointer;
+}
+
+nav .menu-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Hide menu icon on large screens */
+@media (min-width: 769px) {
+    nav .menu-icon {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;  /* Show menu by default on larger screens */
+        flex-direction: row;
     }
 }
