@@ -595,3 +595,39 @@ footer p {
         max-width: 100%;
     }
 }
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/* Image-Text Layout */
+.culture-content {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.image-text-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.culture-image {
+    max-width: 45%;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.image-text-container p {
+    flex: 1;
+    text-align: justify;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .image-text-container {
+        flex-direction: column;
+    }
+
+    .culture-image {
+        max-width: 100%;
+        margin: 0 0 20px 0;
+    }
+}
