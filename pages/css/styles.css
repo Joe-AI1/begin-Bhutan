@@ -174,7 +174,7 @@ footer p {
 
 /* Government Page Specific Styles */
 .government-header {
-    background-image: url('../image-free/Bhutan temple.jpg'); /* Background image for Government page */
+    background-image: url('https://cdn.pixabay.com/photo/2024/09/18/09/52/bhutan-9055746_1280.jpg'); /* Background image for Government page */
     background-size: cover;
     background-position: center;
     height: 400px;
