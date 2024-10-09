@@ -22,85 +22,89 @@
             font-size: 3rem;
             margin-bottom: 10px;
         }
-        header p {
-            font-size: 1.5rem;
-            color: #a0a0a0;
-        }
-        .main-image {
+
+        .section {
+            position: relative;
             width: 100%;
-            height: auto;
-            max-height: 400px;
-            object-fit: cover;
-        }
-        .content {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 0 20px;
-            text-align: center;
-        }
-        .content img {
-            max-width: 100%;
-            height: auto;
-        }
-        .description {
-            font-size: 1.2rem;
-            margin-top: 20px;
-            color: #ccc;
-            line-height: 1.8;
-            text-align: justify;
-        }
-        .map, .gallery {
+            height: 300px;
+            background-size: cover;
+            background-position: center;
             display: flex;
             justify-content: center;
-            margin: 20px 0;
+            align-items: center;
         }
-        .gallery img {
-            margin: 10px;
-            width: 300px;
-            height: auto;
+
+        .section h2 {
+            font-size: 2.5rem;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
             border-radius: 5px;
+            font-weight: 700;
         }
+
+        .section:nth-child(odd) {
+            background-color: #151515;
+        }
+
         footer {
             background-color: #151515;
             color: #a0a0a0;
             padding: 20px 0;
             text-align: center;
         }
+
         footer a {
             color: #a0a0a0;
             text-decoration: none;
             margin: 0 10px;
         }
+
         footer .social-icons img {
             width: 30px;
             height: 30px;
             margin: 0 5px;
         }
+
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Bhutan</h1>
-        <p>Subtitle</p>
+        <h1>BHUTAN</h1>
     </header>
 
-    <img src="image-free\Bhutan temple.jpg" alt="Main Image" class="main-image">
+    <!-- Sections with background images and titles -->
+    <div class="section" style="background-image: url('image-free/Bhutan temple.jpg');">
+        <h2>Government</h2>
+    </div>
 
-    <div class="content">
-        <p class="description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-        </p>
+    <div class="section" style="background-image: url('image2-url.jpg');">
+        <h2>Administrative Division</h2>
+    </div>
 
-        <div class="map">
-            <img src="your-map-image-url-here.jpg" alt="Map">
-        </div>
+    <div class="section" style="background-image: url('image3-url.jpg');">
+        <h2>The National Symbols</h2>
+    </div>
 
-        <div class="gallery">
-            <img src="image-free\Bhutan temple.jpg" alt="Image 1">
-            <img src="https://cdn.pixabay.com/photo/2018/11/12/04/09/tigers-nest-3810180_1280.jpg" alt="Image 2">
-            <img src="your-image3-url-here.jpg" alt="Image 3">
-        </div>
+    <div class="section" style="background-image: url('image4-url.jpg');">
+        <h2>Geography</h2>
+    </div>
+
+    <div class="section" style="background-image: url('image5-url.jpg');">
+        <h2>Economy</h2>
+    </div>
+
+    <div class="section" style="background-image: url('image6-url.jpg');">
+        <h2>Travel</h2>
+    </div>
+
+    <div class="section" style="background-image: url('image7-url.jpg');">
+        <h2>Population</h2>
+    </div>
+
+    <div class="section" style="background-image: url('image8-url.jpg');">
+        <h2>Culture and Traditions</h2>
     </div>
 
     <footer>
