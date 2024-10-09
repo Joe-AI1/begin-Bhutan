@@ -7,37 +7,37 @@
     },
     {
       "title": "Administrative Division",
-      "image": "image2-url.jpg",
+      "image": "image-free/map.jpg",
       "link": "administrative.html"
     },
     {
       "title": "The National Symbols",
-      "image": "image3-url.jpg",
+      "image": "image-free/prayer-flag.jpg",
       "link": "symbols.html"
     },
     {
       "title": "Geography",
-      "image": "image4-url.jpg",
+      "image": "image-free/water-fall.jpg",
       "link": "geography.html"
     },
     {
       "title": "Economy",
-      "image": "image5-url.jpg",
+      "image": "https://th.bing.com/th/id/R.fd2d202aeca4c9bb209aa002cc51d02f?rik=Uz8kxS1FMf%2fTTQ&riu=http%3a%2f%2fdrukcdn.blob.core.windows.net%2fcontent%2fimages%2fmedia%2fDrukAsia_063017_Bhutan-currency-information-druk-asia.jpg&ehk=FaRi0ZcjHtJ2PtJHPHGPm0IIBhBHnFvYuiHdboFWpEk%3d&risl=&pid=ImgRaw&r=0",
       "link": "economy.html"
     },
     {
       "title": "Travel",
-      "image": "image6-url.jpg",
+      "image": "image-free/nature-brige.jpg",
       "link": "travel.html"
     },
     {
       "title": "Population",
-      "image": "image7-url.jpg",
+      "image": "image-free/boys.jpg",
       "link": "population.html"
     },
     {
       "title": "Culture and Traditions",
-      "image": "image8-url.jpg",
+      "image": "image-free/monastery.jpg",
       "link": "culture.html"
     }
   ]
