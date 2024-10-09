@@ -221,3 +221,54 @@ footer p {
     list-style: disc;
     padding-left: 40px;
 }
+
+/* Administrative Division Page Specific Styles */
+.administrative-header {
+    background-image: url('../path-to-your-image/admin-bg-image.jpg'); /* Update with the correct path */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.administrative-header h1 {
+    font-size: 3.5rem;
+    background: rgba(0, 0, 0, 0.6); /* Background for readability */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.administrative-content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #f0f0f0;
+}
+
+.administrative-content h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+.administrative-content p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Flag and Map Images */
+.flag-image {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0;
+    display: block;
+}
+
+.map-image {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px 0;
+    display: block;
+}
