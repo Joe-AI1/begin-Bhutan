@@ -299,8 +299,9 @@ footer p {
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 /* Environment Page Specific Styles */
+/* Environment Page Specific Styles */
 .environment-header {
-    background-image: url('image-free/bird.jpg'); /* Background image for the Environment page header */
+    background-image: url('https://cdn.pixabay.com/photo/2020/11/19/05/52/bird-5757604_1280.jpg'); /* Background image for the Environment page header */
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -317,35 +318,67 @@ footer p {
     border-radius: 5px;
 }
 
-/* Flex container for image and text */
-.image-text-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-/* Style for the images */
-.environment-image {
-    max-width: 40%; /* Image takes up 40% of the container */
-    margin-right: 20px;
+/* Image styling for Environment Page */
+.environment-content img {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px 0;
     display: block;
+    border-radius: 8px; /* Optional: Rounded corners */
 }
 
-/* Ensure the text takes the remaining space */
-.image-text-container p {
-    flex: 1; /* Text takes up the remaining space */
+/* Adjust text spacing */
+.environment-content p {
+    margin-bottom: 30px;
+    line-height: 1.6;
 }
 
-/* Responsive styling */
+/* Responsive styling for smaller devices */
 @media (max-width: 768px) {
-    .image-text-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .environment-image {
+    .environment-content img {
         max-width: 100%;
-        margin-right: 0;
-        margin-bottom: 15px;
+    }
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/* Geography Page Specific Styles */
+.geography-header {
+    background-image: url('https://cdn.pixabay.com/photo/2017/10/01/15/27/bhutan-2805883_1280.jpg'); /* Use a background image for the Geography header */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.geography-header h1 {
+    font-size: 3.5rem;
+    background: rgba(0, 0, 0, 0.6); /* Add background for readability */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Geography images */
+.geography-content img {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px 0;
+    display: block;
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+/* Ensure text and list items have good spacing */
+.geography-content p,
+.geography-content ol {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Responsive styling for images */
+@media (max-width: 768px) {
+    .geography-content img {
+        max-width: 100%;
     }
 }
