@@ -1,7 +1,7 @@
 // JavaScript to load JSON data and display sections
 
 // Fetch the JSON data from the file
-fetch('data.json')
+fetch('data/data.json')
     .then(response => response.json()) // Parse the JSON data
     .then(data => {
         const sectionsContainer = document.getElementById('sections-container');
