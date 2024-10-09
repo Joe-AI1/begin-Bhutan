@@ -170,6 +170,7 @@ footer p {
     }
 }
 
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 /* Add the government page-specific styles here */
 
 /* Government Page Specific Styles */
@@ -222,6 +223,7 @@ footer p {
     padding-left: 40px;
 }
 
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 /* Administrative Division Page Specific Styles */
 .administrative-header {
     background-image: url('https://cdn.pixabay.com/photo/2017/10/07/09/42/bhutan-2825919_1280.jpg'); /* Update with the correct path */
@@ -259,18 +261,13 @@ footer p {
 }
 
 /* Flag and Map Images */
-.flag-image {
-    width: 100%;
-    max-width: 400px;
-    margin: 20px 0;
-    display: block;
-}
-
+.flag-image,
 .map-image {
     width: 100%;
-    max-width: 500px;
+    max-width: 500px; /* You can adjust the max-width depending on your layout */
     margin: 20px 0;
     display: block;
+    border-radius: 8px; /* Optional: adds rounded corners to the images */
 }
 
 /* Flex container to align image and text side-by-side */
@@ -292,14 +289,61 @@ footer p {
     flex: 1; /* Text takes up the remaining space */
 }
 
-/* Additional styling for responsiveness */
+/* Ensure images stack well on smaller devices */
+@media (max-width: 768px) {
+    .flag-image,
+    .map-image {
+        max-width: 100%;
+    }
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/* Environment Page Specific Styles */
+.environment-header {
+    background-image: url('image-free/bird.jpg'); /* Background image for the Environment page header */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.environment-header h1 {
+    font-size: 3.5rem;
+    background: rgba(0, 0, 0, 0.6); /* Add background for readability */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Flex container for image and text */
+.image-text-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Style for the images */
+.environment-image {
+    max-width: 40%; /* Image takes up 40% of the container */
+    margin-right: 20px;
+    display: block;
+}
+
+/* Ensure the text takes the remaining space */
+.image-text-container p {
+    flex: 1; /* Text takes up the remaining space */
+}
+
+/* Responsive styling */
 @media (max-width: 768px) {
     .image-text-container {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .image-text-container img {
+    .environment-image {
         max-width: 100%;
         margin-right: 0;
         margin-bottom: 15px;
