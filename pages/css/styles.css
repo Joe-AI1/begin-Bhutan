@@ -639,39 +639,3 @@ footer p {
     }
 }
 
-/* Responsive navigation bar for mobile: sliding effect */
-nav ul {
-    display: none;  /* Hide the menu by default on small screens */
-    flex-direction: column;
-    background-color: #151515;
-    position: absolute;
-    top: 60px;  /* Adjust based on your header height */
-    width: 100%;
-    left: 0;
-}
-
-nav ul.active {
-    display: flex;  /* Show menu when active */
-}
-
-nav .menu-icon {
-    display: block;
-    cursor: pointer;
-}
-
-nav .menu-icon img {
-    width: 30px;
-    height: 30px;
-}
-
-/* Hide menu icon on large screens */
-@media (min-width: 769px) {
-    nav .menu-icon {
-        display: none;
-    }
-
-    nav ul {
-        display: flex;  /* Show menu by default on larger screens */
-        flex-direction: row;
-    }
-}
