@@ -1,29 +1,38 @@
-// JavaScript to load JSON data and display sections
+// JavaScript to fetch JSON data and dynamically add sections to the page
 
-// Fetch the JSON data from the file
-fetch('data/data.json')
-    .then(response => response.json()) // Parse the JSON data
-    .then(data => {
-        const sectionsContainer = document.getElementById('sections-container');
+document.addEventListener('DOMContentLoaded', () => {
+    // Fetch the JSON data
+    fetch('data/sections.json')
+        .then(response => response.json())
+        .then(data => {
+            const sectionsContainer = document.getElementById('sections-container');
 
-        // Loop through the sections from JSON data
-        data.sections.forEach(section => {
-            // Create a new div for each section
-            const sectionDiv = document.createElement('div');
-            sectionDiv.classList.add('section');
+            // Loop through each section in the JSON data
+            data.sections.forEach(section => {
+                // Create an anchor tag to wrap the section
+                const sectionLink = document.createElement('a');
+                sectionLink.href = section.link;
 
-            // Add the title, description, and image to the section div
-            sectionDiv.innerHTML = `
-                <h2>${section.title}</h2>
-                <p>${section.description}</p>
-                <img src="${section.image}" alt="${section.title}">
-                <a href="${section.link}">Learn More</a>
-            `;
+                // Create a div for the section
+                const sectionDiv = document.createElement('div');
+                sectionDiv.classList.add('section');
+                sectionDiv.style.backgroundImage = `url(${section.image})`;
 
-            // Append the section div to the container
-            sectionsContainer.appendChild(sectionDiv);
+                // Add the section title
+                const sectionTitle = document.createElement('h2');
+                sectionTitle.textContent = section.title;
+
+                // Append the title to the section div
+                sectionDiv.appendChild(sectionTitle);
+
+                // Append the section div to the link
+                sectionLink.appendChild(sectionDiv);
+
+                // Append the link to the container
+                sectionsContainer.appendChild(sectionLink);
+            });
+        })
+        .catch(error => {
+            console.error('Error loading JSON data:', error);
         });
-    })
-    .catch(error => {
-        console.error('Error loading JSON data:', error);
-    });
+});

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bhutan</title>
-    <link rel="stylesheet" href="css/styles.css"> <!-- Link to your CSS -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to external CSS -->
 </head>
 <body>
 
@@ -19,20 +19,37 @@
             <li><a href="pricing.html">Pricing</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+        <div class="auth-buttons">
+            <a href="signin.html" class="sign-in">Sign In</a>
+            <a href="register.html" class="register">Register</a>
+        </div>
     </nav>
 
     <header>
         <h1>BHUTAN</h1>
     </header>
 
-    <!-- Container where JSON data will be dynamically inserted -->
+    <!-- Container where the dynamically generated sections will be inserted -->
     <div id="sections-container"></div>
 
+    <!-- Footer -->
     <footer>
-        <p>© 2024 Bhutan Travel. All rights reserved.</p>
+        <div class="footer-content">
+            <p>© 2024 Bhutan Travel. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><img src="facebook-icon-url.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon-url.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram-icon-url.png" alt="Instagram"></a>
+            </div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy</a>
+            </nav>
+        </div>
     </footer>
 
-    <!-- JavaScript to load JSON data -->
-    <script src="js/script.js"></script>
+    <script src="js/script.js"></script> <!-- Link to the JavaScript file -->
 </body>
 </html>

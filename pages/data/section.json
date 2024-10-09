@@ -1,0 +1,44 @@
+{
+  "sections": [
+    {
+      "title": "Government",
+      "image": "image-free/Bhutan temple.jpg",
+      "link": "government.html"
+    },
+    {
+      "title": "Administrative Division",
+      "image": "image2-url.jpg",
+      "link": "administrative.html"
+    },
+    {
+      "title": "The National Symbols",
+      "image": "image3-url.jpg",
+      "link": "symbols.html"
+    },
+    {
+      "title": "Geography",
+      "image": "image4-url.jpg",
+      "link": "geography.html"
+    },
+    {
+      "title": "Economy",
+      "image": "image5-url.jpg",
+      "link": "economy.html"
+    },
+    {
+      "title": "Travel",
+      "image": "image6-url.jpg",
+      "link": "travel.html"
+    },
+    {
+      "title": "Population",
+      "image": "image7-url.jpg",
+      "link": "population.html"
+    },
+    {
+      "title": "Culture and Traditions",
+      "image": "image8-url.jpg",
+      "link": "culture.html"
+    }
+  ]
+}
