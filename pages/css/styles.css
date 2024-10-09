@@ -318,32 +318,54 @@ footer p {
     border-radius: 5px;
 }
 
-/* Image styling for Environment Page */
+/* Center images and constrain the width of text on Environment Page */
 .environment-content img {
-    width: 100%;
-    max-width: 500px;
-    margin: 20px 0;
     display: block;
-    border-radius: 8px; /* Optional: Rounded corners */
+    margin: 0 auto; /* Center the image */
+    max-width: 500px; /* Set a maximum width for the images */
 }
 
-/* Adjust text spacing */
+/* Center and constrain text width */
 .environment-content p {
-    margin-bottom: 30px;
-    line-height: 1.6;
+    max-width: 800px; /* Constrain the width of the text */
+    margin: 20px auto; /* Center the text block */
+    text-align: center; /* Optional: Center-align the text */
+    padding: 0 20px; /* Add padding for better spacing */
+    line-height: 1.8; /* Improve line height for readability */
 }
 
-/* Responsive styling for smaller devices */
+/* Adjust heading spacing and center */
+.environment-content h2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* For ordered lists (if any) */
+.environment-content ol {
+    max-width: 800px; /* Constrain the list width */
+    margin: 20px auto; /* Center the list block */
+    padding-left: 40px; /* Padding for better list readability */
+    line-height: 1.8;
+}
+
+/* Responsive behavior */
 @media (max-width: 768px) {
     .environment-content img {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+
+    .environment-content p,
+    .environment-content ol {
         max-width: 100%;
+        padding: 0 15px; /* Slight padding on mobile */
     }
 }
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 /* Geography Page Specific Styles */
 .geography-header {
-    background-image: url('../image-free/geography-bg.jpg'); /* Update with appropriate image */
+    background-image: url('https://cdn.pixabay.com/photo/2017/10/01/15/27/bhutan-2805883_1280.jpg'); /* Update with appropriate image */
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -392,5 +414,55 @@ footer p {
         max-width: 100%;
         margin-right: 0;
         margin-bottom: 15px;
+    }
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/* Economy Page Specific Styles */
+.economy-header {
+    background-image: url('https://th.bing.com/th/id/R.fd2d202aeca4c9bb209aa002cc51d02f?rik=Uz8kxS1FMf%2fTTQ&riu=http%3a%2f%2fdrukcdn.blob.core.windows.net%2fcontent%2fimages%2fmedia%2fDrukAsia_063017_Bhutan-currency-information-druk-asia.jpg&ehk=FaRi0ZcjHtJ2PtJHPHGPm0IIBhBHnFvYuiHdboFWpEk%3d&risl=&pid=ImgRaw&r=0'); /* Set the background image for Economy header */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.economy-header h1 {
+    font-size: 3.5rem;
+    background: rgba(0, 0, 0, 0.6); /* Add background for readability */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Economy images */
+.economy-content img {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px 0;
+    display: block;
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+/* Constrain text width and center it */
+.economy-content p {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    line-height: 1.8;
+    text-align: justify; /* Optional: Justify the text */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .economy-content img {
+        max-width: 100%;
+    }
+
+    .economy-content p {
+        max-width: 100%;
+        padding: 0 15px;
     }
 }
