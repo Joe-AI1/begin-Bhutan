@@ -18,6 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 sectionDiv.classList.add('section');
                 sectionDiv.style.backgroundImage = `url(${section.image})`;
 
+                console.log(section.image); // Log the image path to the console
+
                 // Add the section title
                 const sectionTitle = document.createElement('h2');
                 sectionTitle.textContent = section.title;
