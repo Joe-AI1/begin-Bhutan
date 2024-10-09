@@ -343,7 +343,7 @@ footer p {
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 /* Geography Page Specific Styles */
 .geography-header {
-    background-image: url('https://cdn.pixabay.com/photo/2017/10/01/15/27/bhutan-2805883_1280.jpg'); /* Use a background image for the Geography header */
+    background-image: url('../image-free/geography-bg.jpg'); /* Update with appropriate image */
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -360,25 +360,37 @@ footer p {
     border-radius: 5px;
 }
 
-/* Geography images */
-.geography-content img {
-    width: 100%;
-    max-width: 500px;
-    margin: 20px 0;
-    display: block;
-    border-radius: 8px; /* Optional: Rounded corners */
-}
-
-/* Ensure text and list items have good spacing */
-.geography-content p,
-.geography-content ol {
+/* Flex container for image and text side-by-side */
+.image-text-container {
+    display: flex;
+    align-items: center;
     margin-bottom: 30px;
-    line-height: 1.6;
 }
 
-/* Responsive styling for images */
+/* Style for the images */
+.geography-image {
+    max-width: 40%; /* Image takes up 40% of the container */
+    margin-right: 20px;
+    display: block;
+    border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+/* Ensure the text takes the remaining space */
+.image-text-container p,
+.image-text-container div {
+    flex: 1; /* Text takes up the remaining space */
+}
+
+/* Additional styling for responsiveness */
 @media (max-width: 768px) {
-    .geography-content img {
+    .image-text-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .geography-image {
         max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
     }
 }
