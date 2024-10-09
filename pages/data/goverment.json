@@ -1,0 +1,34 @@
+{
+    "title": "Government",
+    "content": [
+      {
+        "paragraph": "Bhutan is a small country located in the Himalayan mountains. The government of Bhutan is a constitutional monarchy, meaning the country has a king as the head of state, but political power is shared with an elected government."
+      },
+      {
+        "heading": "Key components of Bhutan's government:",
+        "list": [
+          {
+            "title": "The King:",
+            "description": "The King of Bhutan plays a crucial role as the head of state, but his powers are defined and limited by the constitution and laws. The current king is King Jigme Khesar Namgyel Wangchuck, who ascended to the throne in 2006."
+          },
+          {
+            "title": "Prime Minister:",
+            "description": "The Prime Minister is the head of the government, elected by the people through parliamentary elections. The Prime Minister leads the government and is responsible for the administration of the country."
+          },
+          {
+            "title": "Parliament:",
+            "description": "Bhutan's parliament is a bicameral system, consisting of two houses:",
+            "sublist": [
+              "National Assembly: Members are directly elected by the people and are responsible for passing legislation.",
+              "National Council: This house acts as an advisory and reviewing body, offering guidance and overseeing the government's work."
+            ]
+          },
+          {
+            "title": "Elections:",
+            "description": "Bhutan held its first national elections in 2008, after the adoption of a new constitution that established a parliamentary democratic system with elected representatives and a separation of powers."
+          }
+        ]
+      }
+    ]
+  }
+  

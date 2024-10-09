@@ -169,3 +169,55 @@ footer p {
         height: 300px;  /* Larger section height for desktops */
     }
 }
+
+/* Add the government page-specific styles here */
+
+/* Government Page Specific Styles */
+.government-header {
+    background-image: url('../image-free/Bhutan temple.jpg'); /* Background image for Government page */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.government-header h1 {
+    font-size: 3.5rem;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.government-content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #f0f0f0;
+}
+
+.government-content h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+.government-content p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.government-content ol {
+    list-style: decimal;
+    padding-left: 20px;
+}
+
+.government-content ol li {
+    margin-bottom: 15px;
+}
+
+.government-content ul {
+    list-style: disc;
+    padding-left: 40px;
+}
