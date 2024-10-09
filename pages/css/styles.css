@@ -535,3 +535,63 @@ footer p {
         max-width: 100%;
     }
 }
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/* Population Page Specific Styles */
+.population-header {
+    background-image: url('https://cdn.pixabay.com/photo/2016/07/16/16/26/children-1522277_1280.jpg'); /* Set the background image for the Population header */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.population-header h1 {
+    font-size: 3.5rem;
+    background: rgba(0, 0, 0, 0.6); /* Add background for readability */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Top Images Section */
+.top-images-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.top-image {
+    max-width: 45%;
+    border-radius: 8px;
+}
+
+/* Middle Images (Chart and WHO Symbol) */
+.middle-image {
+    display: block;
+    max-width: 60%;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/* Bottom Image Section */
+.bottom-image {
+    display: block;
+    max-width: 50%;
+    margin: 40px auto;
+    border-radius: 8px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .top-images-section {
+        flex-direction: column;
+    }
+
+    .top-image, .middle-image, .bottom-image {
+        max-width: 100%;
+    }
+}
