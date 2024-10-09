@@ -37,6 +37,7 @@ nav ul {
     display: flex;
 }
 
+
 nav ul li {
     margin: 0 15px;
 }
@@ -118,4 +119,53 @@ footer nav a {
 
 footer p {
     margin-bottom: 10px;
+}
+
+/* Mobile Devices (max width: 600px) */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;  /* Smaller font size for mobile */
+    }
+
+    header h1 {
+        font-size: 2rem;  /* Smaller font size for mobile */
+    }
+
+    nav ul {
+        flex-direction: column;  /* Stack navigation links vertically on small screens */
+    }
+
+    .section {
+        height: 200px;  /* Adjust section height for smaller screens */
+    }
+}
+
+/* Tablets (min width: 601px and max width: 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;  /* Medium font size for tablets */
+    }
+
+    .section {
+        height: 250px;  /* Adjust section height for tablets */
+    }
+}
+
+/* Desktops (larger screens) */
+@media (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+
+    header h1 {
+        font-size: 3rem;  /* Larger font size for desktops */
+    }
+
+    .section {
+        height: 300px;  /* Larger section height for desktops */
+    }
 }
